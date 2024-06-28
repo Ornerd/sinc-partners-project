@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar'
 import Slider from "react-slick";
 import Button from '../components/Button';
 import NavigLink from '../components/NavigLink';
+import triangle from '/src/assets/shapes/Polygon 3.png'
 
 
 const Homepage = () => {
@@ -439,7 +440,7 @@ const Homepage = () => {
           <div className='flex items-stretch flex-wrap justify-between mt-12'>
             <span className='flex flex-col w-full mb-4 md:ml-4 p-6 bg-white rounded-lg md:w-[30%]'>
               <span className='mb-4'>
-                <img src="/src/assets/shapes/Polygon 3.png" alt="triangle"/>
+                <img src={triangle} alt="triangle"/>
               </span>
               <p>A service-for-shares model of incubating pre-product startups and early-stage companies by building their early stage product and MVP
               </p>
