@@ -311,7 +311,7 @@ const Homepage = () => {
                     <section className={`h-full pt-4 md:pt-0 max-h-[600px] bg-white flex flex-col items-center md:items-start md:max-h-screen justify-center ${windowSize < 930? 'w-full': 'w-1/2'}`}>
                       <h1 className='text-3xl ml-0 md:ml-[15%] w-4/5 min-w-64 font-semibold text-[#303030]'>{slide.header}</h1>
                       <p className='text-2xl  ml-0 md:ml-[15%] w-4/5 min-w-64 font-normal whitespace-pre-line text-[#303030]  my-3'>{slide.text}</p>
-                    <Button buttonText={slide.CTA} buttonStyle={'bg-[#303030] mt-3 ml-[0] md:ml-[15%] '}/>
+                    <Button buttonText={slide.CTA} buttonStyle={'bg-[#303030] mt-3 ml-[0] md:ml-[15%] text-white'}/>
                     </section>
 
                     {
@@ -373,7 +373,7 @@ const Homepage = () => {
               <p className='mb-6 text-center'>SINC Partners has a novel vision of making success available to everyone and democratizing the pain point of success. We are a next generation startup studio focus on building and supporting enterprises at scale and we help them raise service investments and funds across 3-5 deals from as low as $25k at start to up to $15m before you leave the lab.
               We are a Gasus Business, a business built on the foundation of Christian values and belief.</p>
               
-              <Button buttonText={'Read About Us'} buttonStyle={'bg-[#303030] mt-auto px-2 w-1/2'}/>
+              <Button buttonText={'Read About Us'} buttonStyle={'bg-[#303030] mt-auto px-2 lg:w-1/2 text-white'}/>
             </span>
            
             <span>
@@ -483,7 +483,7 @@ const Homepage = () => {
 
           <div className='w-full flex flex-wrap justify-center mt-12 gap-2 lg:gap-5'>
             {companyLogos.map((logo)=> 
-              <span className='md:w-[124px] md:h-[60px] w-[78px] h-[40px] flex items-center justify-center bg-white rounded-md'>
+              <span className='md:w-[124px] md:h-[60px] w-[78px] h-[40px] flex items-center justify-center bg-white rounded-md cursor-pointer'>
                 <img key={logo.id}  src={logo.logo_path} alt='' className='w-1/2'/>
               </span>
             )}

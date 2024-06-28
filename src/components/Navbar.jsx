@@ -53,8 +53,8 @@ const Navbar = () => {
         {navbarContent.map((link)=> <a key={link.id} className='flex w-full align-center mr-5 py-3 pl-4 font-semibold border-[1px] cursor-pointer select-none'>{link.name}</a>)}
       </div>
           <div className='py-2'>
-      <Button buttonText= 'SINC with us' buttonStyle='bg-[#20888f] mr-4'/>
-      <Button buttonText= 'Apply for SIP 1.0' buttonStyle='bg-[#303030]'/>
+      <Button buttonText= 'SINC with us' buttonStyle='bg-[#20888f] mr-4 text-white'/>
+      <Button buttonText= 'Apply for SIP 1.0' buttonStyle='bg-[#303030] text-white'/>
       </div>
     </div>
     </>
