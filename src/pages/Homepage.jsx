@@ -463,7 +463,7 @@ const Homepage = () => {
 
           <div className='flex flex-col items-center md:items-start text-center md:text-left mt-8'>  
             <h1 className='text-2xl font-semibold mb-2'>Case Study</h1>
-            <p className='w-full'>See what Service Incubators get, the maths behind Service Equity (SEEQ) and what the value of your share equity can be over time</p>
+            <p className='w-full'>See what Service Incubators get, the maths behind Service Equity (SEEQ) and what the value of your share equity can be over time</p>
           </div>
           <div className='flex items-start flex-wrap justify-between mt-12'>
             <Button buttonText={'Service Incubator Equity'} buttonStyle={'bg-white text-black border-[1px] border-[#303030] mr-0 md:mr-2 mt-4 md:mt-0'}/>
