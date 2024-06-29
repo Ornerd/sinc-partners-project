@@ -1,9 +1,9 @@
-import imageOne from '../assets/images/image.png'
-import imageTwo from '../assets/images/Frame 49221.png'
-import imagePath3a from "../assets/images/Rectangle1.png"
-import imagePath3b from "../assets/images/Rectangle2.png"
-import imagePath3c from "../assets/images/Rectangle3.png"
-import imagePath3d from "../assets/images/Rectangle 4.png"
+import imageOne from '../assets/Images/image.png'
+import imageTwo from '../assets/Images/Frame 49221.png'
+import imagePath3a from "../assets/Images/Rectangle1.png"
+import imagePath3b from "../assets/Images/Rectangle2.png"
+import imagePath3c from "../assets/Images/Rectangle3.png"
+import imagePath3d from "../assets/Images/Rectangle 4.png"
 
 const heroSectionData = [
     {
