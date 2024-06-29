@@ -48,9 +48,9 @@ const Navbar = () => {
 
     </nav>
     {/* menu for less large screens */}
-    <div className={`${clicked && windowSize < 930? '': 'hidden'} z-[1000] bg-[#f8f4f4] fixed top-[88px] max-w-[600px] flex flex-col align-top justify-between w-full border-2 shadow-md`} >
-      <div className='flex flex-col align-middle'>
-        {navbarContent.map((link)=> <a key={link.id} className='flex w-full align-center mr-5 py-3 pl-4 font-semibold border-[1px] cursor-pointer select-none'>{link.name}</a>)}
+    <div className={`${clicked && windowSize < 930? '': 'hidden'} z-[1000] bg-[#f8f4f4] fixed top-[88px] max-w-[600px] flex flex-col align-top justify-between w-full border-2 shadow-md divide-y divide-slate-500`} >
+      <div className='flex flex-col align-middle divide-y divide-slate-300'>
+        {navbarContent.map((link)=> <a key={link.id} className='flex w-full align-center mr-5 py-3 pl-4 font-semibold cursor-pointer select-none hover:bg-slate-300'>{link.name}</a>)}
       </div>
           <div className='py-2'>
       <Button buttonText= 'SINC with us' buttonStyle='bg-[#20888f] mr-4 text-white'/>

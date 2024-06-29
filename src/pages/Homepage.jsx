@@ -8,7 +8,7 @@ import diamond from "/src/assets/shapes/Polygon 3 (2).png"
 import pentagon from "/src/assets/shapes/Polygon 3 (3).png"
 import heroSectionData from '../components/HomePageData';
 import companyLogos from '../components/Logos';
-import EIRprogramData from '../components/EIRPROGRAMdata';
+import EIRprogramData from '../components/EIRProgramdata';
 
 
 
