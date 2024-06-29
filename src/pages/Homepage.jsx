@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar'
 import Slider from "react-slick";
 import Button from '../components/Button';
 import NavigLink from '../components/NavigLink';
-import triangle from '/src/assets/shapes/Polygon 3.png'
+import triangle from '/src/assets/shapes/Polygon 3.png';
 import imageOne from '/src/assets/images/image.png'
 // import heroSectionData from '../components/HomePageData';
 
