@@ -8,12 +8,14 @@ import diamond from "/src/assets/shapes/Polygon 3 (2).png"
 import pentagon from "/src/assets/shapes/Polygon 3 (3).png"
 import heroSectionData from '../components/HomePageData';
 import companyLogos from '../components/Logos';
+import EIRprogramData from '../components/EIRPROGRAMdata';
 
 
 
 const Homepage = () => {
 
   const [windowSize, setWIndowSize] = useState(window.innerWidth)
+  const [entered, setEntered] = useState(false)
 
   useEffect(()=> {  
     const handleScreenResize= ()=> { //the lengths I go to get responsive layouts ehh! shoutout to ksforgeeks.org though for this idea
@@ -25,11 +27,11 @@ const Homepage = () => {
     }
   }, [])
 
-  var settings = {
+  const settings = {
     dots: true,
     fade: true,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
@@ -37,6 +39,60 @@ const Homepage = () => {
     autoplay: true,
     autoplaySpeed: 5000,
     pauseOnHover: false,
+  };
+
+  const secondSettings = {
+    className: "flex items-center",
+    dots: false,
+    fade: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: true,
+    waitForAnimate: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    pauseOnHover: true,
+    responsive: [
+      {
+        breakpoint: 930,
+        settings: {
+          slidesToShow: 2.5,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false
+        }
+      },
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 1.5,
+          slidesToScroll: 1,
+          // initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 650,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+          appendDots: dots => (
+            <div
+              style={{
+                backgroundColor: "#e7e6e6",
+                borderRadius: "10px",
+                padding: "0px",
+                bottom: '-40px'
+              }}
+            >
+              <ul style={{ margin: "0px" }}> {dots} </ul>
+            </div>
+          ),
+        }
+      }
+    ]
   };
 
   const areasOfFocusData = [
@@ -117,7 +173,7 @@ const Homepage = () => {
         
 
         <section className='w-full hidden md:flex flex-col items-center justify-center mt-20'>
-          <h1 className='w-4/5 md:max-w-3/5 text-4xl font-semibold text-center mb-12'>Network of builders helping startup scale</h1>
+          <h1 className='w-4/5 md:max-w-2xl text-5xl font-semibold text-center mb-12'>Network of builders helping startup scale</h1>
           <div className='flex flex-row items-stretch justify-center flex-wrap w-full p-0'>
             <span className='flex flex-col w-4/5 mb-4 md:mr-4 p-6 bg-white rounded-lg md:w-[38%]'>
               <h2 className='text-xl font-bold mb-6'>Work with Service Incubators to expedite your time-to-market</h2>
@@ -139,9 +195,9 @@ const Homepage = () => {
           </div>
         </section>
         <section className='md:hidden w-full bg-[#ffffff63] flex flex-col items-center justify-center pt-20'>
-          <h1 className='w-4/5 md:max-w-3/5 text-4xl font-semibold text-center mb-2'>Building the future together, democratizing success.</h1>
+          <h1 className='w-4/5 text-5xl font-semibold text-center mb-2'>Building the future together, democratizing success.</h1>
           <div className='flex flex-row items-stretch justify-center flex-wrap w-full p-0'>
-            <span className='flex flex-col items-center w-4/5 mb-4 md:mr-4 p-6 rounded-lg md:w-[38%]'>
+            <span className='flex flex-col items-center w-4/5 mb-4 p-6 rounded-lg'>
               
               <p className='mb-6 text-center'>SINC Partners has a novel vision of making success available to everyone and democratizing the pain point of success. We are a next generation startup studio focus on building and supporting enterprises at scale and we help them raise service investments and funds across 3-5 deals from as low as $25k at start to up to $15m before you leave the lab.
               We are a Gasus Business, a business built on the foundation of Christian values and belief.</p>
@@ -157,7 +213,7 @@ const Homepage = () => {
 
         <section className='flex flex-col items-center w-full my-20 px-8 md:px-0'>
           <div className='flex flex-col items-center text-center'>
-            <h1 className='text-4xl font-semibold mb-8'>Our Area of Focus</h1>
+            <h1 className='text-5xl font-semibold mb-8'>Our Area of Focus</h1>
             <p className='w-full md:w-3/5'>In our quest to help make success available to everyone, we have initial strategic direction to focus on these five (5) key areas at the lab.</p>
           </div>
 
@@ -175,7 +231,7 @@ const Homepage = () => {
 
         <section className='flex flex-col items-center w-full my-4 px-8 md:px-0'>
         <div className='flex flex-col items-center text-center'>
-            <h1 className='text-4xl font-semibold mb-8'>Our Concept Innovations</h1>
+            <h1 className='text-5xl font-semibold mb-8'>Our Concept Innovations</h1>
             <p className='w-full md:w-3/5'>We have proprietary concept innovations that will support the startup ecosystem, support solution-providers/entrepreneurs and ultimately help democratize success;</p>
           </div>
 
@@ -200,7 +256,7 @@ const Homepage = () => {
 
         <section className='flex flex-col items-start w-full my-20 px-8 md:px-0'>
           <div className='flex flex-col items-center text-center mx-auto'>
-            <h1 className='text-4xl font-semibold mb-8'>Our Service Incubation Model</h1>
+            <h1 className='text-5xl font-semibold mb-8'>Our Service Incubation Model</h1>
             <p className='w-full md:w-4/5'>The Service Incubation model is an alternate funding model for startup that allows professionals to offer their services to startups in return for a minute equity (usually between 0.5% to 1.5%) in the startup. As a service incubator, you will see your share grow as much as 1000% in 12 – 24 months as been first to invest.</p>
           </div>
 
@@ -250,19 +306,112 @@ const Homepage = () => {
 
         <section className='w-full my-4'>
           <div className='flex flex-col items-center text-center mx-auto'>
-              <h1 className='text-4xl font-semibold mb-8'>Our Studio Portfolio</h1>
+              <h1 className='text-5xl font-semibold mb-8'>Our Studio Portfolio</h1>
               <p className='w-full md:w-4/5'>Our 2024 Service Incubator Portfolio Companies</p>
           </div>
 
-          <div className='w-full flex flex-wrap justify-center mt-12 gap-2 lg:gap-5'>
+          <div className='w-full flex flex-wrap justify-center mt-12 gap-2 lg:gap-5' onMouseEnter={()=> setEntered(true)} onMouseLeave={()=>setEntered(false)}>
             {companyLogos.map((logo)=> 
-              <span className='md:w-[124px] md:h-[60px] w-[78px] h-[40px] flex items-center justify-center bg-white rounded-md cursor-pointer'>
+              <span className={`${entered? 'opacity-30': 'opaque'} md:w-[124px] hover:opacity-100 md:h-[60px] w-[78px] h-[40px] flex items-center justify-center bg-white rounded-md cursor-pointer`}>
                 <img key={logo.id}  src={logo.logo_path} alt='' className='w-1/2'/>
               </span>
             )}
            
           </div>
         </section>
+
+        <section className='flex flex-col items-start w-full my-24 px-8 md:px-0'>
+          <div className='flex flex-col items-center text-center mx-auto'>
+            <h1 className='text-5xl font-semibold mb-8'>Co-found With Us</h1>
+            <p className='w-full md:w-4/5'>We seek to collaborate with visionary individuals who are solving similar problems of helping entrepreneurs succeed.</p>
+          </div>
+
+          
+
+          <div className='flex items-stretch flex-wrap justify-between mt-12'>
+            <span className='flex flex-col w-full mb-4 md:ml-4 p-6 bg-white rounded-lg md:w-[30%]'>
+              <span className='w-[60px] h-[60px] mb-4 rounded-[50%] bg-[#303030] flex items-center justify-center'>
+                  <p className='text-white font-semibold'>1</p>
+              </span>
+              <h2 className='text-xl font-bold mb-4'>We Ideate</h2>
+              <p>We internally generate concepts and ideas that help solve problems in our thesis areas, after which we proceed to develop a nano/micro MVP (usually having as low as 30 functions to as high as 100 functions) of the product that we take to the market.
+              </p>
+            </span>
+            <span className='flex flex-col w-full mb-4 md:ml-4 p-6 bg-white rounded-lg md:w-[30%]'>
+              <span className='w-[60px] h-[60px] mb-4 rounded-[50%] bg-[#F47733] flex items-center justify-center'>
+                  <p className='text-white font-semibold'>2</p>
+              </span>
+              <h2 className='text-xl font-bold mb-4'>You Validate</h2>
+              <p>You join our 3 months  inResidence program as a business expert to run the operations or as a technical expert to further the development and validate the idea with an average monthly revenue of $1k or 10,000 users and/or an MVP of at least 150 functions.
+              </p>
+            </span>
+            <span className='flex flex-col w-full mb-4 md:ml-4 p-6 bg-white rounded-lg md:w-[30%]'>
+              <span className='w-[60px] h-[60px] mb-4 rounded-[50%] bg-[#ff78bf] flex items-center justify-center'>
+                  <p className='text-white font-semibold'>3</p>
+              </span>
+              <h2 className='text-xl font-bold mb-4'>You Co-own</h2>
+              <p>After successful validation and demo day at the end of the EIR program, we move those with perfect fit to become co-founders of the product they validated as CEO & CTO, each owning 20% of the venture.
+              </p>
+            </span>
+
+          </div>
+
+          <NavigLink linkName={'Build Your Dream'} linkStyle={'mt-12 mx-auto'}/>
+
+        </section>
+        <section className='flex flex-col items-start w-full my-2 px-8 md:px-0'>
+          <div className='flex flex-col items-center text-center mx-auto'>
+            <h1 className='text-5xl font-semibold mb-8'>How It Works</h1>
+            <p className='w-full md:w-4/5'>Our EIR program is our structured 3 months un-paid program designed to help us have a pipeline of business and technical cofounders who can run the venture of choice as CEO & CTO owning 20% equity each.</p>
+          </div>
+
+          <section className='w-full h-[50vh] mt-12 overflow-y-visible'>
+            <Slider {...secondSettings}>
+              {EIRprogramData.map((procedure)=>
+              <span key={procedure.id} className='w-full min-w-[400px] h-full flex items-start'>
+                {/* <span className='w-full h-[350px] flex items-center justify-center'> */}
+                <span className='w-[80%] min-h-full p-4 bg-white rounded-xl flex flex-col'>
+                  <span>
+                    <img src={procedure.icon} alt=''/>
+                  </span>
+                  <h2 className='font-bold mt-4 mb-2'>{procedure.step}</h2>
+                  <p className='whitespace-pre-line text-sm'>{procedure.process}</p>
+                </span>
+                {/* </span> */}
+                
+              </span>)}
+            </Slider>
+          </section>
+
+          <NavigLink linkName={'Support the Future'} linkStyle={'mt-16 mx-auto hidden md:flex'}/>
+
+        </section>
+
+        <section className='mt-36'>
+          <div className='flex flex-col items-center text-center mx-auto lg:max-w-[1050px]'>
+              <h1 className='text-5xl font-semibold mb-8'>SINC Investors Network</h1>
+              <p className='w-full md:w-4/5'>Our deals are structured not just to take in investments but to onboard owners passionate about our solutions. Our portfolio companies are valued at $50k at start, with these low valuation, you are guaranteed at least 2x-5x, usually been the first to invest. <br/>
+              Disclaimer: These deal flows is a statement of our projections and may differ from stage to stage and from venture to venture and the guarantee is for deal 1, usually the first to invest. 
+              </p>
+          </div>
+
+          <section className='w-full grid grid-flow-col'>
+            <h1>Micro Angel Investors & Service incubators (Invest from $500 & above)</h1>
+            <div>
+              <h3>Deal 1</h3>
+              <p>
+                ✓ Idea Stage: $5k for 5% Equity
+                <br/>✓ Expected Revenue at This Stage: $0/mth
+                <br/>✓ Duration of Raise: 1mth
+                <br/>✓ Who Can Invest: People with Domain Expertise and Advisors 
+              </p>
+            </div>
+            <h1>Angel Investors & Venture Capital (Invest from $50k and above) </h1>
+          </section>
+
+        </section>
+
+
      </section>
     
 
