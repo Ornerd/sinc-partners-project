@@ -1,4 +1,5 @@
 import imageOne from '../assets/images/image.png'
+import imageTwo from '/src/assets/images/Frame 49221.png'
 
 const heroSectionData = [
     {
@@ -14,7 +15,7 @@ const heroSectionData = [
       header: "We are big on these 3 things;",
       text: `✓ Service Incubation & Ecosystem Advocacy \n ✓ Building SAAS & Marketing Tech Platforms \n ✓ Institutional Innovations`,
       CTA:  "SINC With Us",
-      image_path: '/src/assets/images/Frame 49221.png',
+      image_path: imageTwo,
       additional: []  
     },
     {
