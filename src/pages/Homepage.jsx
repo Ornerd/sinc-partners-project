@@ -3,8 +3,11 @@ import Navbar from '../components/Navbar'
 import Slider from "react-slick";
 import Button from '../components/Button';
 import NavigLink from '../components/NavigLink';
-import triangle from '/src/assets/shapes/Polygon 3.png'
-// import heroSectionData from '../components/HomePageData';
+import triangle from '/src/assets/shapes/Polygon 3.png';
+import diamond from "/src/assets/shapes/Polygon 3 (2).png"
+import pentagon from "/src/assets/shapes/Polygon 3 (3).png"
+import heroSectionData from '../components/HomePageData';
+import companyLogos from '../components/Logos';
 
 
 
@@ -35,37 +38,6 @@ const Homepage = () => {
     autoplaySpeed: 5000,
     pauseOnHover: false,
   };
-
-  const heroSectionData = [
-    {
-      id: 1,
-      header: "SINC Partners is a service incubation company",
-      text: "Connecting experts in product development and growth marketing willing to offer their services to amazing startups in exchange for minute equity (usually 0.5% to 2%).",
-      CTA:  "SINC With Us",
-      image_path: 'public/static/images/image.png',
-      additional: []  
-    },
-    {
-      id: 2,
-      header: "We are big on these 3 things;",
-      text: `✓ Service Incubation & Ecosystem Advocacy \n ✓ Building SAAS & Marketing Tech Platforms \n ✓ Institutional Innovations`,
-      CTA:  "SINC With Us",
-      image_path: '/images/Frame 49221.png',
-      additional: []  
-    },
-    {
-      id: 3,
-      header: "Come with an idea, leave with a company.",
-      text: "You, alongside seasoned service partners and investors, expedite the growth and market entry of your startup.",
-      CTA:  "SINC With Us",
-      image_path: [
-        {id: 1, path: "/images/Rectangle1.png", config:"absolute top-0 -left-[20%]"},
-         {id: 2, path:"/src/assets/images/Rectangle2.png", config:"absolute w-3/5 max-w-[350px] right-4"},
-          {id: 3, path:"/src/assets/images/Rectangle3.png", config:"w-4/12 absolute bottom-[2%] left-[5%]"},
-           {id: 4, path:"/src/assets/images/Rectangle 4.png", config:"w-4/12 absolute bottom-[2%] -right-[5%]"}],
-      additional: []  
-    },
-  ]
 
   const areasOfFocusData = [
     {
@@ -100,208 +72,6 @@ const Homepage = () => {
     }
   ]
 
-  const companyLogos = [
-    {
-      id: 1,
-      logo_name: '',
-      logo_path: '/src/assets/logos/other logos/1.png' 
-    },
-    {
-      id: 2,
-      logo_name: '',
-      logo_path: '/src/assets/logos/other logos/2.png' 
-    },
-    {
-      id: 3,
-      logo_name: '',
-      logo_path: '/src/assets/logos/other logos/3.png' 
-    },
-    {
-      id: 4,
-      logo_name: '',
-      logo_path: '/src/assets/logos/other logos/4.png' 
-    },
-    {
-      id: 5,
-      logo_name: '',
-      logo_path: '/src/assets/logos/other logos/5.png' 
-    },
-    {
-      id: 6,
-      logo_name: '',
-      logo_path: '/src/assets/logos/other logos/6.png' 
-    },
-    {
-      id: 7,
-      logo_name: '',
-      logo_path: '/src/assets/logos/other logos/7.png' 
-    },
-    {
-      id: 8,
-      logo_name: '',
-      logo_path: '/src/assets/logos/other logos/8.png' 
-    },
-    {
-      id: 9,
-      logo_name: '',
-      logo_path: '/src/assets/logos/other logos/9.png' 
-    },
-    {
-      id: 10,
-      logo_name: '',
-      logo_path: '/src/assets/logos/other logos/10.png' 
-    },
-    {
-      id: 11,
-      logo_name: '',
-      logo_path: '/src/assets/logos/other logos/11.png' 
-    },
-    {
-      id: 12,
-      logo_name: '',
-      logo_path: '/src/assets/logos/other logos/12.png' 
-    },
-    {
-      id: 13,
-      logo_name: '',
-      logo_path: '/src/assets/logos/other logos/13.png' 
-    },
-    {
-      id: 14,
-      logo_name: '',
-      logo_path: '/src/assets/logos/other logos/14.png' 
-    },
-    {
-      id: 15,
-      logo_name: '',
-      logo_path: '/src/assets/logos/other logos/15.png' 
-    },
-    {
-      id: 16,
-      logo_name: '',
-      logo_path: '/src/assets/logos/other logos/16.png' 
-    },
-    {
-      id: 17,
-      logo_name: '',
-      logo_path: '/src/assets/logos/other logos/17.png' 
-    },
-    {
-      id: 18,
-      logo_name: '',
-      logo_path: '/src/assets/logos/other logos/18.png' 
-    },
-    {
-      id: 19,
-      logo_name: '',
-      logo_path: '/src/assets/logos/other logos/19.png' 
-    },
-    {
-      id: 20,
-      logo_name: '',
-      logo_path: '/src/assets/logos/other logos/20.png' 
-    },
-    {
-      id: 21,
-      logo_name: '',
-      logo_path: '/src/assets/logos/other logos/21.png' 
-    },
-    {
-      id: 22,
-      logo_name: '',
-      logo_path: '/src/assets/logos/other logos/22.png' 
-    },
-    {
-      id: 23,
-      logo_name: '',
-      logo_path: '/src/assets/logos/other logos/23.png' 
-    },
-    {
-      id: 24,
-      logo_name: '',
-      logo_path: '/src/assets/logos/other logos/24.png' 
-    },
-    {
-      id: 25,
-      logo_name: '',
-      logo_path: '/src/assets/logos/other logos/25.png' 
-    },
-    {
-      id: 26,
-      logo_name: '',
-      logo_path: '/src/assets/logos/other logos/26.png' 
-    },
-    {
-      id: 27,
-      logo_name: '',
-      logo_path: '/src/assets/logos/other logos/27.png' 
-    },
-    {
-      id: 28,
-      logo_name: '',
-      logo_path: '/src/assets/logos/other logos/28.png' 
-    },
-    {
-      id: 29,
-      logo_name: '',
-      logo_path: '/src/assets/logos/other logos/29.png' 
-    },
-    {
-      id: 30,
-      logo_name: '',
-      logo_path: '/src/assets/logos/other logos/30.png' 
-    },
-    {
-      id: 31,
-      logo_name: '',
-      logo_path: '/src/assets/logos/other logos/31.png' 
-    },
-    {
-      id: 32,
-      logo_name: '',
-      logo_path: '/src/assets/logos/other logos/32.png' 
-    },
-    {
-      id: 33,
-      logo_name: '',
-      logo_path: '/src/assets/logos/other logos/33.png' 
-    },
-    {
-      id: 34,
-      logo_name: '',
-      logo_path: '/src/assets/logos/other logos/34.png' 
-    },
-    {
-      id: 35,
-      logo_name: '',
-      logo_path: '/src/assets/logos/other logos/35.png' 
-    },
-    {
-      id: 36,
-      logo_name: '',
-      logo_path: '/src/assets/logos/other logos/36.png' 
-    },
-    {
-      id: 37,
-      logo_name: '',
-      logo_path: '/src/assets/logos/other logos/37.png' 
-    },
-    {
-      id: 38,
-      logo_name: '',
-      logo_path: '/src/assets/logos/other logos/38.png' 
-    },
-    {
-      id: 39,
-      logo_name: '',
-      logo_path: '/src/assets/logos/other logos/39.png' 
-    },
-    {
-      id: 40,
-      logo_name: '',
-      logo_path: '/src/assets/logos/other logos/40.png' 
-    },
-  ]
 
   return (
     <>
@@ -449,14 +219,14 @@ const Homepage = () => {
             </span>
             <span className='flex flex-col w-full mb-4 md:ml-4 p-6 bg-white rounded-lg md:w-[30%]'>
               <span className='mb-4'>
-                <img src="/src/assets/shapes/Polygon 3 (2).png" alt="diamond"/>
+                <img src={diamond} alt="diamond"/>
               </span>
               <p>If startups can seed 5-10% in equity to incubators for $20k to $200k funding most times, they will be willing to seed 10% equity for a $25k service investment
               </p>
             </span>
             <span className='flex flex-col w-full mb-4 md:ml-4 p-6 bg-white rounded-lg md:w-[30%]'>
               <span className='mb-4'>
-                <img src="/src/assets/shapes/Polygon 3 (3).png" alt="pentagon"/>
+                <img src={pentagon} alt="pentagon"/>
               </span>
               <p>Young professionals who don’t have a lot of money to invest nor an accredited investors will have opportunities to take equity at the early stage of their career, usually been the first to invest and almost guaranteed of return
               </p>
