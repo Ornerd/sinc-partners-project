@@ -1,5 +1,9 @@
 import imageOne from '../assets/images/image.png'
-import imageTwo from '/src/assets/images/Frame 49221.png'
+import imageTwo from '../assets/images/Frame 49221.png'
+import imagePath3a from "../assets/images/Rectangle1.png"
+import imagePath3b from "../assets/images/Rectangle2.png"
+import imagePath3c from "../assets/images/Rectangle3.png"
+import imagePath3d from "../assets/images/Rectangle 4.png"
 
 const heroSectionData = [
     {
@@ -24,10 +28,10 @@ const heroSectionData = [
       text: "You, alongside seasoned service partners and investors, expedite the growth and market entry of your startup.",
       CTA:  "SINC With Us",
       image_path: [
-        {id: 1, path: "/src/assets/images/Rectangle1.png", config:"absolute top-0 -left-[20%]"},
-         {id: 2, path:"/src/assets/images/Rectangle2.png", config:"absolute w-3/5 max-w-[350px] right-4"},
-          {id: 3, path:"/src/assets/images/Rectangle3.png", config:"w-4/12 absolute bottom-[2%] left-[5%]"},
-           {id: 4, path:"/src/assets/images/Rectangle 4.png", config:"w-4/12 absolute bottom-[2%] -right-[5%]"}],
+        {id: 1, path: imagePath3a, config:"absolute top-0 -left-[20%]"},
+         {id: 2, path:imagePath3b, config:"absolute w-3/5 max-w-[350px] right-4"},
+          {id: 3, path:imagePath3c, config:"w-4/12 absolute bottom-[2%] left-[5%]"},
+           {id: 4, path:imagePath3d, config:"w-4/12 absolute bottom-[2%] -right-[5%]"}],
       additional: []  
     },
   ]
