@@ -103,7 +103,7 @@ const Homepage = () => {
 
         </Slider>      
      </section>
-      {/* Hero Section */}
+      {/* Hero Section above*/}
      <section className='w-screen max-w-[1180px] flex flex-col items-center mx-auto md:pt-8'>
       <div className='pt-8 md:pt-0 w-full bg-[#ffffff63] md:bg-transparent flex justify-center'>
         <div className='bg-white py-6 px-6 md:px-12 rounded-3xl w-4/5 md:w-[70%] text-center'>
