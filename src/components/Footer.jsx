@@ -70,7 +70,7 @@ const Footer = () => {
           </div>
           
         </div>
-        <div  className='w-full h-full flex flex-col border-[#ffffff46] md:border-l-[1px] pt-8 pb-6 px-4'>
+        <div  className='w-full h-full flex flex-col border-[#ffffff46] border-t-[1px] lg:border-t-0 md:border-l-[1px] pt-8 pb-6 lg:px-4'>
           <span className='mb-6 font-bold'>Location</span>
           <span className='mb-4 font-thin'>Abuja, Nigeria</span>
           <span className='mb-4 font-thin'>Lagos, Nigeria</span>
@@ -78,14 +78,14 @@ const Footer = () => {
           <div></div>
         </div>
       </section>
-      {/* <section>
-      Guaranteed 2x on your service or cash investment, usually been the first to invest. Get in early and SINC your guaranty!
+      <section>
+      <p>Guaranteed 2x on your service or cash investment, usually been the first to invest. Get in early and SINC your guaranty!</p>
       2023 SINC Partners Ltd. All rights reserved
       Privacy Policy 
 Terms of Service
 Security
 We are a business built on the foundation of Christian values and belief
-      </section> */}
+      </section>
     </footer>
   )
 }
