@@ -11,6 +11,7 @@ import companyLogos from '../components/Logos';
 import EIRprogramData from '../components/EIRProgramdata';
 import RightArrow from '../components/RightArrow';
 import LeftArrow from '../components/LeftArrow';
+import Footer from '../components/Footer';
 
 
 
@@ -172,15 +173,15 @@ const Homepage = () => {
      </section>
       {/* Hero Section above*/}
      <section className='w-screen max-w-[1180px] flex flex-col items-center mx-auto md:pt-8'>
-      <div className='pt-8 md:pt-0 w-full bg-[#ffffff63] md:bg-transparent flex justify-center'>
-        <div className='bg-white py-6 px-4 md:px-12 rounded-3xl w-[90%] md:w-[70%] text-center'>
-            <p className='mb-6 text-lg font-medium'>"Nigeria and Africa has a massive network effect that have not be fully utilized. With Nigerians/Africans in every country and territory of the world, we can scale an African business to 100+ countries in few weeks"
-            </p>
-            <p>
-            <span className='font-bold'>Daniel Izeghs Oratokhai</span> <br/> Managing Partner at SINC Partners Ltd
-            </p>
+        <div className='pt-8 md:pt-0 w-full bg-[#ffffff63] md:bg-transparent flex justify-center'>
+          <div className='bg-white py-6 px-4 md:px-12 rounded-3xl w-[90%] md:w-[70%] text-center'>
+              <p className='mb-6 text-lg font-medium'>"Nigeria and Africa has a massive network effect that have not be fully utilized. With Nigerians/Africans in every country and territory of the world, we can scale an African business to 100+ countries in few weeks"
+              </p>
+              <p>
+              <span className='font-bold'>Daniel Izeghs Oratokhai</span> <br/> Managing Partner at SINC Partners Ltd
+              </p>
+          </div>
         </div>
-      </div>
         
 
         <section className='w-full hidden md:flex flex-col items-center justify-center mt-20'>
@@ -499,13 +500,12 @@ const Homepage = () => {
             </div>
           </section>
 
-
-
         </section>
-
+       
 
      </section>
-    
+
+     <Footer/>    
 
     </>
   )

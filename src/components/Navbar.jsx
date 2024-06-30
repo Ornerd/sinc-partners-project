@@ -19,7 +19,7 @@ const Navbar = () => {
     const navbarContent = [{id: 0, name: 'About'}, {id: 1, name: 'SIP'}, {id: 2, name: 'Studio'}, {id: 3, name: 'SEEQ'}, {id: 4, name: 'Platforms'}, {id: 5, name: 'Initiatives'}, {id: 6, name: 'More'}]
   return (
     <>
-    <nav className={`z-[1024] fixed w-screen flex justify-center align-middle bg-[#f8f4f4] ${windowSize < 930? 'px-5': ''}`} >
+    <nav className={`z-[10240] fixed w-screen flex justify-center align-middle bg-[#f8f4f4] ${windowSize < 930? 'px-5': ''}`} >
      
       <div className='w-full max-w-[1180px] py-3  flex flex-row justify-between align-middle'>
         <div className='mr-5 w-fit'>
@@ -48,7 +48,7 @@ const Navbar = () => {
 
     </nav>
     {/* menu for less large screens */}
-    <div className={`${clicked && windowSize < 930? '': 'hidden'} z-[1000] bg-[#f8f4f4] fixed top-[88px] max-w-[600px] flex flex-col align-top justify-between w-full border-2 shadow-md divide-y divide-slate-500`} >
+    <div className={`${clicked && windowSize < 930? '': 'hidden'} z-[10000] bg-[#f8f4f4] fixed top-[88px] max-w-[600px] flex flex-col align-top justify-between w-full border-2 shadow-md divide-y divide-slate-500`} >
       <div className='flex flex-col align-middle divide-y divide-slate-300'>
         {navbarContent.map((link)=> <a key={link.id} className='flex w-full align-center mr-5 py-3 pl-4 font-semibold cursor-pointer select-none hover:bg-slate-300'>{link.name}</a>)}
       </div>
