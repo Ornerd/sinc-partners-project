@@ -479,7 +479,7 @@ const Homepage = () => {
                 </p>
               </span>
               <span className='px-2 py-4 border-b-[1px] last:border-b-0 border-r-0 md:odd:border-r-[1px] md:even:border-r-0 md:[&>*:nth-child(3)]:border-b-0 md:[&>*:nth-child(4)]:border-b-[1px] lg:border-b-0 border-[#303030]  lg:last:border-r-0'>
-                <div className='bg-black w-full h-full p-2 flex flex-col'>
+                <div className='bg-black w-full h-full min-h-[150px] md:min-h-0 p-2 flex flex-col'>
                   <h3 className='font-bold text-white'>Work with to Service Incubators (SINC) to expedite your time to market.</h3>
                   <Button buttonText={'Join SINC Network'} buttonStyle={'bg-[#303030] text-white mt-auto w-fit'}/>                 
                 </div>
