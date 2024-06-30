@@ -308,7 +308,7 @@ const Homepage = () => {
           <div className='flex items-start flex-wrap justify-between mt-8 md:mt-12'>
             <Button buttonText={'Service Incubator Equity'} buttonStyle={'bg-white text-black border-[1px] border-[#303030] mr-0 md:mr-2 mt-4 w-full md:w-fit md:mt-0'}/>
             <Button buttonText={'SEEQ Maths Equation'} buttonStyle={'bg-white text-black border-[1px] border-[#303030] mr-0 md:mr-2 mt-4  w-full md:w-fit md:mt-0'}/>
-            <Button buttonText={'Value of my Equity Over Time'} buttonStyle={'bg-white text-black border-[1px] border-[#303030] mr-0 md:mr-2 mt-4 md:mt-0 w-full md:w-fi'}/>
+            <Button buttonText={'Value of my Equity Over Time'} buttonStyle={'bg-white text-black border-[1px] border-[#303030] mr-0 md:mr-2 mt-4 md:mt-0 w-full md:w-fit'}/>
           </div>
 
           <NavigLink linkName={'Become A Service Incubator'} linkStyle={'mt-12 mx-auto'}/>
@@ -409,47 +409,84 @@ const Homepage = () => {
           </div>
 
           <section className='w-full px-4 '>
-            <h1 className='py-4'>Micro Angel Investors & Service incubators (Invest from $500 & above)</h1>
+            <h1 className='py-4 text-center md:text-left'><span className='font-bold'>Micro Angel Investors & Service incubators</span> (Invest from $500 & above)</h1>
             <div className='grid grid-flow-row md:grid-cols-2 md:grid-rows-2 lg:grid-cols-4 lg:grid-rows-none border-y-[1px] border-[#303030]'>
               <span className='px-2 py-4 border-b-[1px] last:border-b-0 border-r-0 md:odd:border-r-[1px] md:even:border-r-0 md:[&>*:nth-child(3)]:border-b-0 md:[&>*:nth-child(4)]:border-b-[1px] lg:border-b-0 border-[#303030]  lg:last:border-r-0'>
-                <h3>Deal 1</h3>
+                <h3 className='font-bold'>Deal 1</h3>
                 <p>
-                  ✓ Idea Stage: $5k for 5% Equity
-                  <br/>✓ Expected Revenue at This Stage: $0/mth
-                  <br/>✓ Duration of Raise: 1mth
-                  <br/>✓ Who Can Invest: People with Domain Expertise and Advisors 
+                  ✓ Idea Stage: <span className='font-bold'>$5k for 5% Equity</span>
+                  <br/>✓ Expected Revenue at This Stage: <span className='font-bold'>$0/mth</span>
+                  <br/>✓ Duration of Raise: <span className='font-bold'>1mth</span>
+                  <br/>✓ Who Can Invest: <span className='font-bold'>People with Domain Expertise and Advisors</span> 
                 </p>
               </span>
-              <span className='px-2 py-4 border-b-[1px] last:border-b-0 border-r-0 md:odd:border-r-[1px] md:even:border-r-0 md:[&>*:nth-child(3)]:border-b-0 md:[&>*:nth-child(4)]:border-b-[1px] lg:border-b-0 border-[#303030]  lg:even:border-r-[1px]'>
-                <h3>Deal 2</h3>
+              <span className='px-2 py-4 border-b-[1px] last:border-b-0 border-r-0 md:odd:border-r-[1px] md:even:border-r-0  lg:border-b-0 border-[#303030] lg:even:border-r-[1px] lg:last:border-r-0'>
+                <h3 className='font-bold'>Deal 2</h3>
                 <p>
-                  ✓ Idea Stage: $5k for 5% Equity
-                  <br/>✓ Expected Revenue at This Stage: $0/mth
-                  <br/>✓ Duration of Raise: 1mth
-                  <br/>✓ Who Can Invest: People with Domain Expertise and Advisors 
+                  ✓ Idea Stage: <span className='font-bold'>$5k for 5% Equity</span>
+                  <br/>✓ Expected Revenue at This Stage: <span className='font-bold'>$0/mth</span>
+                  <br/>✓ Duration of Raise: <span className='font-bold'>1mth</span>
+                  <br/>✓ Who Can Invest: <span className='font-bold'>People with Domain Expertise and Advisors</span> 
                 </p>
               </span>
-              <span className='px-2 py-4 border-b-[1px] last:border-b-0 border-r-0 md:odd:border-r-[1px] md:even:border-r-0 md:border-b-0  lg:border-b-0 border-[#303030]'>
-                <h3>Deal 3</h3>
+              <span className='px-2 py-4 border-b-[1px] last:border-b-0 border-r-0 md:odd:border-r-[1px] md:even:border-r-0 md:border-b-0  lg:border-b-0 border-[#303030]  lg:last:border-r-0'>
+                <h3 className='font-bold'>Deal 3</h3>
                 <p>
-                  ✓ Idea Stage: $5k for 5% Equity
-                  <br/>✓ Expected Revenue at This Stage: $0/mth
-                  <br/>✓ Duration of Raise: 1mth
-                  <br/>✓ Who Can Invest: People with Domain Expertise and Advisors 
+                  ✓ Idea Stage: <span className='font-bold'>$5k for 5% Equity</span>
+                  <br/>✓ Expected Revenue at This Stage: <span className='font-bold'>$0/mth</span>
+                  <br/>✓ Duration of Raise: <span className='font-bold'>1mth</span>
+                  <br/>✓ Who Can Invest: <span className='font-bold'>People with Domain Expertise and Advisors</span> 
                 </p>
               </span>
               <span className='px-2 py-4 border-b-[1px] last:border-b-0 border-r-0 md:odd:border-r-[1px] md:even:border-r-0 md:[&>*:nth-child(3)]:border-b-0 md:[&>*:nth-child(4)]:border-b-[1px] lg:border-b-0 border-[#303030]  lg:last:border-r-0'>
-                <h3>Deal 4</h3>
+                <h3 className='font-bold'>Deal 4</h3>
                 <p>
-                  ✓ Idea Stage: $5k for 5% Equity
-                  <br/>✓ Expected Revenue at This Stage: $0/mth
-                  <br/>✓ Duration of Raise: 1mth
-                  <br/>✓ Who Can Invest: People with Domain Expertise and Advisors 
+                  ✓ Idea Stage: <span className='font-bold'>$5k for 5% Equity</span>
+                  <br/>✓ Expected Revenue at This Stage: <span className='font-bold'>$0/mth</span>
+                  <br/>✓ Duration of Raise: <span className='font-bold'>1mth</span>
+                  <br/>✓ Who Can Invest: <span className='font-bold'>People with Domain Expertise and Advisors</span> 
                 </p>
               </span>
               
             </div>
-            <h1>Angel Investors & Venture Capital (Invest from $50k and above) </h1>
+            <h1 className= 'py-4 text-center md:text-left'><span className='font-bold'>Angel Investors & Venture Capital </span>(Invest from $50k and above) </h1>
+            <div className='grid grid-flow-row md:grid-cols-2 md:grid-rows-2 lg:grid-cols-4 lg:grid-rows-none border-y-[1px] border-[#303030]'>
+              <span className='px-2 py-4 border-b-[1px] last:border-b-0 border-r-0 md:odd:border-r-[1px] md:even:border-r-0 md:[&>*:nth-child(3)]:border-b-0 md:[&>*:nth-child(4)]:border-b-[1px] lg:border-b-0 border-[#303030]  lg:last:border-r-0'>
+                <h3 className='font-bold'>Deal 5</h3>
+                <p>
+                  ✓ Idea Stage: <span className='font-bold'>$5k for 5% Equity</span>
+                  <br/>✓ Expected Revenue at This Stage: <span className='font-bold'>$0/mth</span>
+                  <br/>✓ Duration of Raise: <span className='font-bold'>1mth</span>
+                  <br/>✓ Who Can Invest: <span className='font-bold'>People with Domain Expertise and Advisors</span> 
+                </p>
+              </span>
+              <span className='px-2 py-4 border-b-[1px] last:border-b-0 border-r-0 md:odd:border-r-[1px] md:even:border-r-0  lg:border-b-0 border-[#303030] lg:even:border-r-[1px] lg:last:border-r-0'>
+                <h3 className='font-bold'>Deal 6</h3>
+                <p>
+                  ✓ Idea Stage: <span className='font-bold'>$5k for 5% Equity</span>
+                  <br/>✓ Expected Revenue at This Stage: <span className='font-bold'>$0/mth</span>
+                  <br/>✓ Duration of Raise: <span className='font-bold'>1mth</span>
+                  <br/>✓ Who Can Invest: <span className='font-bold'>People with Domain Expertise and Advisors</span> 
+                </p>
+              </span>
+              <span className='px-2 py-4 border-b-[1px] last:border-b-0 border-r-0 md:odd:border-r-[1px] md:even:border-r-0 md:border-b-0  lg:border-b-0 border-[#303030]  lg:last:border-r-0'>
+                <h3 className='font-bold'>Deal 7</h3>
+                <p>
+                  ✓ Idea Stage: <span className='font-bold'>$5k for 5% Equity</span>
+                  <br/>✓ Expected Revenue at This Stage: <span className='font-bold'>$0/mth</span>
+                  <br/>✓ Duration of Raise: <span className='font-bold'>1mth</span>
+                  <br/>✓ Who Can Invest: <span className='font-bold'>People with Domain Expertise and Advisors</span> 
+                </p>
+              </span>
+              <span className='px-2 py-4 border-b-[1px] last:border-b-0 border-r-0 md:odd:border-r-[1px] md:even:border-r-0 md:[&>*:nth-child(3)]:border-b-0 md:[&>*:nth-child(4)]:border-b-[1px] lg:border-b-0 border-[#303030]  lg:last:border-r-0'>
+                <div className='bg-black w-full h-full p-2 flex flex-col'>
+                  <h3 className='font-bold text-white'>Work with to Service Incubators (SINC) to expedite your time to market.</h3>
+                  <Button buttonText={'Join SINC Network'} buttonStyle={'bg-[#303030] text-white mt-auto w-fit'}/>                 
+                </div>
+                
+              </span>
+              
+            </div>
           </section>
 
         </section>
