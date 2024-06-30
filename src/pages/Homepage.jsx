@@ -67,8 +67,8 @@ const Homepage = () => {
     waitForAnimate: true,
     autoplay: false,
     pauseOnHover: true,
-    nextArrow: <RightArrow arrowStyle={'top-[450px] md:top-[125%]'} />,
-    prevArrow: <LeftArrow  arrowStyle={'top-[450px] md:top-[125%]'} disabledArrow={disabledArrow}/>,
+    nextArrow: <RightArrow arrowStyle={'top-[470px] md:top-[125%]'} />,
+    prevArrow: <LeftArrow  arrowStyle={'top-[470px] md:top-[125%]'} disabledArrow={disabledArrow}/>,
     beforeChange: (current, next) => {
       setOldSlide(current);
       setActiveSlide(next);
@@ -410,7 +410,7 @@ const Homepage = () => {
           <section className='w-full px-4 '>
             <h1 className='py-4'>Micro Angel Investors & Service incubators (Invest from $500 & above)</h1>
             <div className='grid grid-flow-row md:grid-cols-2 md:grid-rows-2 lg:grid-cols-4 lg:grid-rows-none border-y-[1px] border-[#303030]'>
-              <span className='px-2 py-4 mx-auto border-b-[1px] last:border-b-0 border-r[0px] md:odd:border-r-[1px] md:even:border-r-0 md:[&>*:nth-child(3)]:border-b-0 md:[&>*:nth-child(4)]:border-b-0 lg:border-b-0 border-[#303030] lg:even:border-r-[1px] lg:last:border-r-[1px]'>
+              <span className='px-2 py-4 border-b-[1px] last:border-b-0 border-r-0 md:odd:border-r-[1px] md:even:border-r-0 md:[&>*:nth-child(3)]:border-b-0 md:[&>*:nth-child(4)]:border-b-[1px] lg:border-b-0 border-[#303030]  lg:last:border-r-0'>
                 <h3>Deal 1</h3>
                 <p>
                   ✓ Idea Stage: $5k for 5% Equity
@@ -419,7 +419,7 @@ const Homepage = () => {
                   <br/>✓ Who Can Invest: People with Domain Expertise and Advisors 
                 </p>
               </span>
-              <span className='px-2 py-4 mx-auto border-b-[1px] last:border-b-0 border-r[0px] md:odd:border-r-[1px] md:even:border-r-0 md:[&>*:nth-child(3)]:border-b-0 md:[&>*:nth-child(4)]:border-b-0 lg:border-b-0 border-[#303030] lg:even:border-r-[1px] lg:last:border-r-[1px]'>
+              <span className='px-2 py-4 border-b-[1px] last:border-b-0 border-r-0 md:odd:border-r-[1px] md:even:border-r-0 md:[&>*:nth-child(3)]:border-b-0 md:[&>*:nth-child(4)]:border-b-[1px] lg:border-b-0 border-[#303030]  lg:even:border-r-[1px]'>
                 <h3>Deal 2</h3>
                 <p>
                   ✓ Idea Stage: $5k for 5% Equity
@@ -428,7 +428,7 @@ const Homepage = () => {
                   <br/>✓ Who Can Invest: People with Domain Expertise and Advisors 
                 </p>
               </span>
-              <span className='px-2 py-4 mx-auto border-b-[1px] last:border-b-0 border-r[0px] md:odd:border-r-[1px] md:even:border-r-0 md:[&>*:nth-child(3)]:border-b-0 md:[&>*:nth-child(4)]:border-b-0 lg:border-b-0 border-[#303030] lg:even:border-r-[1px] lg:last:border-r-[1px]'>
+              <span className='px-2 py-4 border-b-[1px] last:border-b-0 border-r-0 md:odd:border-r-[1px] md:even:border-r-0 md:border-b-0  lg:border-b-0 border-[#303030]'>
                 <h3>Deal 3</h3>
                 <p>
                   ✓ Idea Stage: $5k for 5% Equity
@@ -437,8 +437,8 @@ const Homepage = () => {
                   <br/>✓ Who Can Invest: People with Domain Expertise and Advisors 
                 </p>
               </span>
-              <span className='px-2 py-4 mx-auto border-b-[1px] last:border-b-0 border-r[0px] md:odd:border-r-[1px] md:even:border-r-0 md:[&>*:nth-child(3)]:border-b-0 md:[&>*:nth-child(4)]:border-b-0 lg:border-b-0 border-[#303030] lg:even:border-r-[1px] lg:last:border-r-[1px]'>
-                <h3>Deal 1</h3>
+              <span className='px-2 py-4 border-b-[1px] last:border-b-0 border-r-0 md:odd:border-r-[1px] md:even:border-r-0 md:[&>*:nth-child(3)]:border-b-0 md:[&>*:nth-child(4)]:border-b-[1px] lg:border-b-0 border-[#303030]  lg:last:border-r-0'>
+                <h3>Deal 4</h3>
                 <p>
                   ✓ Idea Stage: $5k for 5% Equity
                   <br/>✓ Expected Revenue at This Stage: $0/mth
