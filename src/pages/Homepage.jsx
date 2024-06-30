@@ -148,9 +148,9 @@ const Homepage = () => {
           {heroSectionData.map((slide)=>
              <div key={slide.id} className='h-[94vh] max-h-[600px] md:max-h-[94vh] pt-0 md:pt-20 w-screen flex flex-row items-start md:items-center justify-center'>
                 <div className='w-screen h-full max-h-[600px] md:max-h-screen flex flex-row items-center justify-center'>
-                    <section className={`h-full pt-4 md:pt-0 max-h-[600px] bg-white flex flex-col items-center md:items-start md:max-h-screen justify-center ${windowSize < 930? 'w-full': 'w-1/2'}`}>
-                      <h1 className='text-3xl ml-0 md:ml-[15%] w-4/5 min-w-64 font-semibold text-[#303030]'>{slide.header}</h1>
-                      <p className='text-2xl  ml-0 md:ml-[15%] w-4/5 min-w-64 font-normal whitespace-pre-line text-[#303030]  my-3'>{slide.text}</p>
+                    <section className={`h-full pt-4 md:pt-0 max-h-[600px] pl-4 md:pl-0 bg-white flex flex-col items-start *:md:items-center md:items-start md:max-h-screen justify-center ${windowSize < 930? 'w-full': 'w-1/2'}`}>
+                      <h1 className='text-2xl md:text-3xl ml-0 md:ml-[15%] w-full md:w-4/5 min-w-64 font-semibold text-[#303030]'>{slide.header}</h1>
+                      <p className='text-xl  ml-0 md:ml-[15%] w-full md:w-4/5 min-w-64 font-normal whitespace-pre-line text-[#303030]  my-3'>{slide.text}</p>
                     <Button buttonText={slide.CTA} buttonStyle={'bg-[#303030] mt-3 ml-[0] md:ml-[15%] text-white'}/>
                     </section>
 
@@ -173,7 +173,7 @@ const Homepage = () => {
       {/* Hero Section above*/}
      <section className='w-screen max-w-[1180px] flex flex-col items-center mx-auto md:pt-8'>
       <div className='pt-8 md:pt-0 w-full bg-[#ffffff63] md:bg-transparent flex justify-center'>
-        <div className='bg-white py-6 px-6 md:px-12 rounded-3xl w-4/5 md:w-[70%] text-center'>
+        <div className='bg-white py-6 px-4 md:px-12 rounded-3xl w-[90%] md:w-[70%] text-center'>
             <p className='mb-6 text-lg font-medium'>"Nigeria and Africa has a massive network effect that have not be fully utilized. With Nigerians/Africans in every country and territory of the world, we can scale an African business to 100+ countries in few weeks"
             </p>
             <p>
@@ -206,7 +206,7 @@ const Homepage = () => {
           </div>
         </section>
         <section className='md:hidden w-full bg-[#ffffff63] flex flex-col items-center justify-center pt-20'>
-          <h1 className='w-4/5 text-5xl font-semibold text-center mb-2'>Building the future together, democratizing success.</h1>
+          <h1 className='w-4/5 text-2xl font-semibold text-center mb-2'>Building the future together, democratizing success.</h1>
           <div className='flex flex-row items-stretch justify-center flex-wrap w-full p-0'>
             <span className='flex flex-col items-center w-4/5 mb-4 rounded-lg'>
               
