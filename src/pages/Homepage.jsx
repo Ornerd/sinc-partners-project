@@ -224,7 +224,7 @@ const Homepage = () => {
 
         <section className='flex flex-col items-center w-full my-20 px-8 md:px-0'>
           <div className='flex flex-col items-center text-center'>
-            <h1 className='text-5xl font-semibold mb-8'>Our Area of Focus</h1>
+            <h1 className=' text-2xl md:text-5xl font-semibold mb-8'>Our Area of Focus</h1>
             <p className='w-full md:w-3/5'>In our quest to help make success available to everyone, we have initial strategic direction to focus on these five (5) key areas at the lab.</p>
           </div>
 
@@ -242,23 +242,23 @@ const Homepage = () => {
 
         <section className='flex flex-col items-center w-full my-4 px-8 md:px-0'>
         <div className='flex flex-col items-center text-center'>
-            <h1 className='text-5xl font-semibold mb-8'>Our Concept Innovations</h1>
+            <h1 className='text-2xl md:text-5xl font-semibold mb-8'>Our Concept Innovations</h1>
             <p className='w-full md:w-3/5'>We have proprietary concept innovations that will support the startup ecosystem, support solution-providers/entrepreneurs and ultimately help democratize success;</p>
           </div>
 
           <div className='flex items-stretch flex-wrap justify-between mt-12'>
             <span className='flex flex-col w-full mb-4 md:ml-4 p-6 bg-white rounded-lg md:w-[30%]'>
-              <h2 className='text-xl font-bold mb-8'>Service Incubator</h2>
+              <h2 className='text-xl text-center font-bold mb-8'>Service Incubator</h2>
               <p>A service-for-shares model of incubating pre-product startups and early-stage companies by building their early stage product and MVP
               </p>
             </span>
             <span className='flex flex-col w-full mb-4 md:ml-4 p-6 bg-white rounded-lg md:w-[30%]'>
-              <h2 className='text-xl font-bold mb-8'>Virtualting</h2>
+              <h2 className='text-xl font-bold mb-8 text-center'>Virtualting</h2>
               <p>A resource share model that allows companies share the time of resources (employees, consultants, technical advisers or influencers) while also splitting the service cost of the resource
               </p>
             </span>
             <span className='flex flex-col w-full mb-4 md:ml-4 p-6 bg-white rounded-lg md:w-[30%]'>
-              <h2 className='text-xl font-bold mb-8'>Diiming</h2>
+              <h2 className='text-xl font-bold mb-8 text-center'>Diiming</h2>
               <p>A progressive investment model that allows you to put aside income (disposable or non-disposable) as investment over a period towards an investment or spend of your choice
               </p>
             </span>
@@ -267,12 +267,12 @@ const Homepage = () => {
 
         <section className='flex flex-col items-start w-full my-20 px-8 md:px-0'>
           <div className='flex flex-col items-center text-center mx-auto'>
-            <h1 className='text-5xl font-semibold mb-8'>Our Service Incubation Model</h1>
+            <h1 className='text-2xl md:text-5xl font-semibold mb-8'>Our Service Incubation Model</h1>
             <p className='w-full md:w-4/5'>The Service Incubation model is an alternate funding model for startup that allows professionals to offer their services to startups in return for a minute equity (usually between 0.5% to 1.5%) in the startup. As a service incubator, you will see your share grow as much as 1000% in 12 – 24 months as been first to invest.</p>
           </div>
 
           <div className='flex flex-col items-center md:items-start text-center md:text-left mt-8'>
-            <h1 className='text-2xl font-semibold mb-2'>Hypothesis</h1>
+            <h1 className='text-xl md:text-2xl font-semibold mb-2'>Hypothesis</h1>
             <p className='w-full'>Just a few reasons we know its time for this model within the ecosystem</p>
           </div>
 
@@ -302,13 +302,13 @@ const Homepage = () => {
           </div>
 
           <div className='flex flex-col items-center md:items-start text-center md:text-left mt-8'>  
-            <h1 className='text-2xl font-semibold mb-2'>Case Study</h1>
+            <h1 className='text-3xl md:text-2xl font-semibold mb-2'>Case Study</h1>
             <p className='w-full'>See what Service Incubators get, the maths behind Service Equity (SEEQ) and what the value of your share equity can be over time</p>
           </div>
-          <div className='flex items-start flex-wrap justify-between mt-12'>
-            <Button buttonText={'Service Incubator Equity'} buttonStyle={'bg-white text-black border-[1px] border-[#303030] mr-0 md:mr-2 mt-4 md:mt-0'}/>
-            <Button buttonText={'SEEQ Maths Equation'} buttonStyle={'bg-white text-black border-[1px] border-[#303030] mr-0 md:mr-2 mt-4 md:mt-0'}/>
-            <Button buttonText={'Value of my Equity Over Time'} buttonStyle={'bg-white text-black border-[1px] border-[#303030] mr-0 md:mr-2 mt-4 md:mt-0'}/>
+          <div className='flex items-start flex-wrap justify-between mt-8 md:mt-12'>
+            <Button buttonText={'Service Incubator Equity'} buttonStyle={'bg-white text-black border-[1px] border-[#303030] mr-0 md:mr-2 mt-4 w-full md:w-fit md:mt-0'}/>
+            <Button buttonText={'SEEQ Maths Equation'} buttonStyle={'bg-white text-black border-[1px] border-[#303030] mr-0 md:mr-2 mt-4  w-full md:w-fit md:mt-0'}/>
+            <Button buttonText={'Value of my Equity Over Time'} buttonStyle={'bg-white text-black border-[1px] border-[#303030] mr-0 md:mr-2 mt-4 md:mt-0 w-full md:w-fi'}/>
           </div>
 
           <NavigLink linkName={'Become A Service Incubator'} linkStyle={'mt-12 mx-auto'}/>
@@ -317,11 +317,11 @@ const Homepage = () => {
 
         <section className='w-full my-4'>
           <div className='flex flex-col items-center text-center mx-auto'>
-              <h1 className='text-5xl font-semibold mb-8'>Our Studio Portfolio</h1>
+              <h1 className='text-2xl md:text-5xl font-semibold mb-8'>Our Studio Portfolio</h1>
               <p className='w-full md:w-4/5'>Our 2024 Service Incubator Portfolio Companies</p>
           </div>
 
-          <div className='w-full flex flex-wrap justify-center mt-12 gap-2 lg:gap-5' onMouseEnter={()=> setEntered(true)} onMouseLeave={()=>setEntered(false)}>
+          <div className='w-full flex flex-wrap justify-center md:mt-12 gap-2 lg:gap-5' onMouseEnter={()=> setEntered(true)} onMouseLeave={()=>setEntered(false)}>
             {companyLogos.map((logo)=> 
               <span className={`${entered? 'opacity-30': 'opaque'} md:w-[124px] hover:opacity-100 md:h-[60px] w-[78px] h-[40px] flex items-center justify-center bg-white rounded-md cursor-pointer`}>
                 <img key={logo.id}  src={logo.logo_path} alt='' className='w-1/2'/>
@@ -333,7 +333,7 @@ const Homepage = () => {
 
         <section className='flex flex-col items-start w-full my-24 px-8 md:px-0'>
           <div className='flex flex-col items-center text-center mx-auto'>
-            <h1 className='text-5xl font-semibold mb-8'>Co-found With Us</h1>
+            <h1 className='text-2xl md:text-5xl font-semibold mb-8'>Co-found With Us</h1>
             <p className='w-full md:w-4/5'>We seek to collaborate with visionary individuals who are solving similar problems of helping entrepreneurs succeed.</p>
           </div>
 
@@ -372,8 +372,9 @@ const Homepage = () => {
         </section>
         <section className='flex flex-col items-start w-full my-2 px-8 md:px-0'>
           <div className='flex flex-col items-center text-center mx-auto'>
-            <h1 className='text-5xl font-semibold mb-8'>How It Works</h1>
-            <p className='w-full md:w-4/5'>Our EIR program is our structured 3 months un-paid program designed to help us have a pipeline of business and technical cofounders who can run the venture of choice as CEO & CTO owning 20% equity each.</p>
+            <h1 className='text-5xl font-semibold mb-8 hidden md:block'>How It Works</h1>
+            <h1 className='text-2xl font-semibold mb-8 block md:hidden'>Service Incubation Process</h1>
+            <p className='w-full md:w-4/5 hidden md:block'>Our EIR program is our structured 3 months un-paid program designed to help us have a pipeline of business and technical cofounders who can run the venture of choice as CEO & CTO owning 20% equity each.</p>
           </div>
 
           <section className='w-full h-[420px] mt-12 overflow-y-visible'>
@@ -401,7 +402,7 @@ const Homepage = () => {
 
         <section className='mt-36'>
           <div className='flex flex-col items-center text-center mx-4 md:mx-auto lg:max-w-[1050px]'>
-              <h1 className='text-5xl font-semibold mb-8'>SINC Investors Network</h1>
+              <h1 className='text-2xl md:text-5xl font-semibold mb-8'>SINC Investors Network</h1>
               <p className='w-full md:w-4/5'>Our deals are structured not just to take in investments but to onboard owners passionate about our solutions. Our portfolio companies are valued at $50k at start, with these low valuation, you are guaranteed at least 2x-5x, usually been the first to invest. <br/>
               Disclaimer: These deal flows is a statement of our projections and may differ from stage to stage and from venture to venture and the guarantee is for deal 1, usually the first to invest. 
               </p>
