@@ -208,7 +208,7 @@ const Homepage = () => {
         <section className='md:hidden w-full bg-[#ffffff63] flex flex-col items-center justify-center pt-20'>
           <h1 className='w-4/5 text-5xl font-semibold text-center mb-2'>Building the future together, democratizing success.</h1>
           <div className='flex flex-row items-stretch justify-center flex-wrap w-full p-0'>
-            <span className='flex flex-col items-center w-4/5 mb-4 p-6 rounded-lg'>
+            <span className='flex flex-col items-center w-4/5 mb-4 rounded-lg'>
               
               <p className='mb-6 text-center'>SINC Partners has a novel vision of making success available to everyone and democratizing the pain point of success. We are a next generation startup studio focus on building and supporting enterprises at scale and we help them raise service investments and funds across 3-5 deals from as low as $25k at start to up to $15m before you leave the lab.
               We are a Gasus Business, a business built on the foundation of Christian values and belief.</p>
