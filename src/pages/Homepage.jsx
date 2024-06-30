@@ -317,11 +317,11 @@ const Homepage = () => {
 
         <section className='w-full my-4'>
           <div className='flex flex-col items-center text-center mx-auto'>
-              <h1 className='text-2xl md:text-5xl font-semibold mb-8'>Our Studio Portfolio</h1>
+              <h1 className='text-2xl md:text-5xl font-semibold mb-4 md:mb-8'>Our Studio Portfolio</h1>
               <p className='w-full md:w-4/5'>Our 2024 Service Incubator Portfolio Companies</p>
           </div>
 
-          <div className='w-full flex flex-wrap justify-center md:mt-12 gap-2 lg:gap-5' onMouseEnter={()=> setEntered(true)} onMouseLeave={()=>setEntered(false)}>
+          <div className='w-full flex flex-wrap justify-center mt-8 md:mt-12 gap-2 lg:gap-5' onMouseEnter={()=> setEntered(true)} onMouseLeave={()=>setEntered(false)}>
             {companyLogos.map((logo)=> 
               <span className={`${entered? 'opacity-30': 'opaque'} md:w-[124px] hover:opacity-100 md:h-[60px] w-[78px] h-[40px] flex items-center justify-center bg-white rounded-md cursor-pointer`}>
                 <img key={logo.id}  src={logo.logo_path} alt='' className='w-1/2'/>
@@ -373,7 +373,7 @@ const Homepage = () => {
         <section className='flex flex-col items-start w-full my-2 px-8 md:px-0'>
           <div className='flex flex-col items-center text-center mx-auto'>
             <h1 className='text-5xl font-semibold mb-8 hidden md:block'>How It Works</h1>
-            <h1 className='text-2xl font-semibold mb-8 block md:hidden'>Service Incubation Process</h1>
+            <h1 className='text-2xl font-semibold mb-4 block md:hidden'>Service Incubation Process</h1>
             <p className='w-full md:w-4/5 hidden md:block'>Our EIR program is our structured 3 months un-paid program designed to help us have a pipeline of business and technical cofounders who can run the venture of choice as CEO & CTO owning 20% equity each.</p>
           </div>
 
@@ -400,8 +400,8 @@ const Homepage = () => {
 
         </section>
 
-        <section className='mt-36'>
-          <div className='flex flex-col items-center text-center mx-4 md:mx-auto lg:max-w-[1050px]'>
+        <section className='mt-52 md:mt-36'>
+          <div className='flex flex-col items-center text-center mx-4 md:mx-auto mb-4 lg:max-w-[1050px]'>
               <h1 className='text-2xl md:text-5xl font-semibold mb-8'>SINC Investors Network</h1>
               <p className='w-full md:w-4/5'>Our deals are structured not just to take in investments but to onboard owners passionate about our solutions. Our portfolio companies are valued at $50k at start, with these low valuation, you are guaranteed at least 2x-5x, usually been the first to invest. <br/>
               Disclaimer: These deal flows is a statement of our projections and may differ from stage to stage and from venture to venture and the guarantee is for deal 1, usually the first to invest. 
