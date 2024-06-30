@@ -150,7 +150,7 @@ const Homepage = () => {
              <div key={slide.id} className='h-[94vh] max-h-[600px] md:max-h-[94vh] pt-0 md:pt-20 w-screen flex flex-row items-start md:items-center justify-center'>
                 <div className='w-screen h-full max-h-[600px] md:max-h-screen flex flex-row items-center justify-center'>
                     <section className={`h-full pt-4 md:pt-0 max-h-[600px] pl-4 md:pl-0 bg-white flex flex-col items-start *:md:items-center md:items-start md:max-h-screen justify-center ${windowSize < 930? 'w-full': 'w-1/2'}`}>
-                      <h1 className='text-2xl md:text-3xl ml-0 md:ml-[15%] w-full md:w-4/5 min-w-64 font-semibold text-[#303030]'>{slide.header}</h1>
+                      <h1 className='text-2xl md:text-3xl ml-0 md:ml-[15%] w-[90%] md:w-4/5 font-semibold text-[#303030]'>{slide.header}</h1>
                       <p className='text-xl  ml-0 md:ml-[15%] w-full md:w-4/5 min-w-64 font-normal whitespace-pre-line text-[#303030]  my-3'>{slide.text}</p>
                     <Button buttonText={slide.CTA} buttonStyle={'bg-[#303030] mt-3 ml-[0] md:ml-[15%] text-white'}/>
                     </section>
