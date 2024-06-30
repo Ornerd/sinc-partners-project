@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from './Button'
+import footerLogo from '../assets/logos/SINC LOGO white outline 1.png'
 
 const Footer = () => {
   return (
@@ -13,17 +14,24 @@ const Footer = () => {
           <Button buttonStyle={'bg-white text-black w-fit font-bold ml-auto'} buttonText={'Subscribe'}/>
         </form>
       </section>
-      <section className='w-full grid grid-flow-col md:pl-[7%] border-[#ffffff46] border-t-[1px] grid-cols-[3fr_1fr]'>
-        <div className='w-full h-full flex flex-nowrap'>
-          <div className=''></div>
+      <section className='w-full grid grid-flow-row md:grid-flow-col md:pl-[7%] border-[#ffffff46] border-t-[1px] border-b-[1px] grid-cols-1 md:grid-cols-[3fr_1fr]'>
+        <div className='w-full h-full flex flex-nowrap pt-8 pb-6'>
+          <div className=''>
+            <img src={footerLogo} alt='SINC white logo'/>
+            <p></p>
+          </div>
           <div className=''></div>
           <div className=''></div>
           <div className=''></div>
           <div className=''></div>
           <div className=''></div>
         </div>
-        <div  className='w-full h-full flex flex-nowrap'>
-          
+        <div  className='w-full h-full flex flex-col border-[#ffffff46] md:border-l-[1px] pt-8 pb-6 px-4'>
+          <span className='mb-6 font-bold'>Location</span>
+          <span className='mb-4 font-thin'>Abuja, Nigeria</span>
+          <span className='mb-4 font-thin'>Lagos, Nigeria</span>
+          <span className='mb-4 font-thin'>Philadelphia, USA</span>
+          <div></div>
         </div>
       </section>
     </footer>
