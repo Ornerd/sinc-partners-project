@@ -489,7 +489,17 @@ const Homepage = () => {
             </div>
           </section>
 
-          
+          <section className='w-full my-16 hidden md:block'>
+            <div className='flex flex-col items-center text-center mx-auto'>
+                <h1 className='text-2xl md:text-5xl w-1/2 font-semibold mb-4 md:mb-8'>Let's build companies that help everyone succeed</h1>
+                <div>
+                <Button buttonText={'SINC With Us'} buttonStyle={'bg-white text-black mr-6'}/>
+                <Button buttonText={'Apply to SIP 1.0'} buttonStyle={'bg-black text-white'}/>
+                </div>
+            </div>
+          </section>
+
+
 
         </section>
 
