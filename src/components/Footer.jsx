@@ -91,9 +91,9 @@ const Footer = () => {
       </section>
       <section className='flex flex-wrap lg:px-[7%] text-[#C9C9C9]'>
         <p className='pt-12 pb-12 text-sm'>Guaranteed 2x on your service or cash investment, usually been the first to invest. Get in early and SINC your guaranty!</p>
-        <div className='w-1/4 ml-auto'>
-        <img src={GasusLogo} />
-          <p className='text-sm'>We are a business built on the foundation of Christian values and belief</p>
+        <div className='w-[30%] ml-auto pt-8 flex justify-between'>
+         <img src={GasusLogo} className='h-[40px]'/>
+          <p className='text-xs'>We are a business built on the foundation of Christian values and belief</p>
         </div>
         <p className='mr-auto text-white'>© 2023 SINC Partners Ltd. All rights reserved</p>
         <span className='flex mr-auto underline'>
@@ -111,7 +111,7 @@ const Footer = () => {
 
         </span>
 
-        <p className='block w-full text-center'>Web In Nigeria</p>
+        <p className='block w-full text-center pb-4'>Web In Nigeria</p>
        
         
       </section>
