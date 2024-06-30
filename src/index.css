@@ -19,11 +19,6 @@
     opacity: 0.5;
 }
 
-.slick-track {
-    display: flex;
-    align-items: stretch;
-}
-
 .slick-dots li button:before
 {
     font-family: 'slick';
@@ -116,3 +111,4 @@
 {
     opacity: .75;
 }
+

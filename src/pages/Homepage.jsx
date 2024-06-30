@@ -9,6 +9,8 @@ import pentagon from "/src/assets/shapes/Polygon 3 (3).png"
 import heroSectionData from '../components/HomePageData';
 import companyLogos from '../components/Logos';
 import EIRprogramData from '../components/EIRProgramdata';
+import RightArrow from '../components/RightArrow';
+import LeftArrow from '../components/LeftArrow';
 
 
 
@@ -16,6 +18,9 @@ const Homepage = () => {
 
   const [windowSize, setWIndowSize] = useState(window.innerWidth)
   const [entered, setEntered] = useState(false)
+  const [oldSlide, setOldSlide] = useState(0)
+  const [activeSlide, setActiveSlide] = useState(0)
+  const [disabledArrow, setDisabledArrow] = useState(false)
 
   useEffect(()=> {  
     const handleScreenResize= ()=> { //the lengths I go to get responsive layouts ehh! shoutout to ksforgeeks.org though for this idea
@@ -26,6 +31,15 @@ const Homepage = () => {
       window.removeEventListener('resize', handleScreenResize)
     }
   }, [])
+
+  useEffect(()=> {
+    if (activeSlide === 0) {
+      setDisabledArrow(true)
+    }else {
+      setDisabledArrow(false)
+    }
+    console.log(activeSlide, disabledArrow)
+  }, [activeSlide, disabledArrow])
 
   const settings = {
     dots: true,
@@ -42,36 +56,33 @@ const Homepage = () => {
   };
 
   const secondSettings = {
-    className: "flex items-center",
+    className: "odd:flex odd:items-stretch",
     dots: false,
     fade: false,
-    infinite: true,
+    infinite: false,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 3.5,
     slidesToScroll: 1,
     arrows: true,
     waitForAnimate: true,
-    autoplay: true,
-    autoplaySpeed: 5000,
+    autoplay: false,
     pauseOnHover: true,
+    nextArrow: <RightArrow arrowStyle={'top-[450px] md:top-[125%]'} />,
+    prevArrow: <LeftArrow  arrowStyle={'top-[450px] md:top-[125%]'} disabledArrow={disabledArrow}/>,
+    beforeChange: (current, next) => {
+      setOldSlide(current);
+      setActiveSlide(next);
+    },
     responsive: [
       {
         breakpoint: 930,
         settings: {
           slidesToShow: 2.5,
           slidesToScroll: 1,
-          infinite: true,
           dots: false
         }
       },
-      {
-        breakpoint: 700,
-        settings: {
-          slidesToShow: 1.5,
-          slidesToScroll: 1,
-          // initialSlide: 2
-        }
-      },
+    
       {
         breakpoint: 650,
         settings: {
@@ -365,19 +376,20 @@ const Homepage = () => {
             <p className='w-full md:w-4/5'>Our EIR program is our structured 3 months un-paid program designed to help us have a pipeline of business and technical cofounders who can run the venture of choice as CEO & CTO owning 20% equity each.</p>
           </div>
 
-          <section className='w-full h-[50vh] mt-12 overflow-y-visible'>
+          <section className='w-full h-[420px] mt-12 overflow-y-visible'>
             <Slider {...secondSettings}>
               {EIRprogramData.map((procedure)=>
-              <span key={procedure.id} className='w-full min-w-[400px] h-full flex items-start'>
-                {/* <span className='w-full h-[350px] flex items-center justify-center'> */}
-                <span className='w-[80%] min-h-full p-4 bg-white rounded-xl flex flex-col'>
+              <span key={procedure.id} className='w-[400px]'>
+                <span className='w-full h-[420px] flex items-center justify-center'> 
+                <span className='w-[90%] h-[420px] p-4 pb-8 bg-white rounded-xl flex flex-col'>
                   <span>
                     <img src={procedure.icon} alt=''/>
                   </span>
                   <h2 className='font-bold mt-4 mb-2'>{procedure.step}</h2>
-                  <p className='whitespace-pre-line text-sm'>{procedure.process}</p>
+                  <p className='mb-4 text-sm'>{procedure.process.split('/')[0]}</p>
+                  <p className='text-sm text-start'>{procedure.process.split('/')[1]}</p>
                 </span>
-                {/* </span> */}
+                </span>
                 
               </span>)}
             </Slider>
@@ -388,23 +400,53 @@ const Homepage = () => {
         </section>
 
         <section className='mt-36'>
-          <div className='flex flex-col items-center text-center mx-auto lg:max-w-[1050px]'>
+          <div className='flex flex-col items-center text-center mx-4 md:mx-auto lg:max-w-[1050px]'>
               <h1 className='text-5xl font-semibold mb-8'>SINC Investors Network</h1>
               <p className='w-full md:w-4/5'>Our deals are structured not just to take in investments but to onboard owners passionate about our solutions. Our portfolio companies are valued at $50k at start, with these low valuation, you are guaranteed at least 2x-5x, usually been the first to invest. <br/>
               Disclaimer: These deal flows is a statement of our projections and may differ from stage to stage and from venture to venture and the guarantee is for deal 1, usually the first to invest. 
               </p>
           </div>
 
-          <section className='w-full grid grid-flow-col'>
-            <h1>Micro Angel Investors & Service incubators (Invest from $500 & above)</h1>
-            <div>
-              <h3>Deal 1</h3>
-              <p>
-                ✓ Idea Stage: $5k for 5% Equity
-                <br/>✓ Expected Revenue at This Stage: $0/mth
-                <br/>✓ Duration of Raise: 1mth
-                <br/>✓ Who Can Invest: People with Domain Expertise and Advisors 
-              </p>
+          <section className='w-full px-4 '>
+            <h1 className='py-4'>Micro Angel Investors & Service incubators (Invest from $500 & above)</h1>
+            <div className='grid grid-flow-row md:grid-cols-2 md:grid-rows-2 lg:grid-cols-4 lg:grid-rows-none border-y-[1px] border-[#303030]'>
+              <span className='px-2 py-4 mx-auto border-b-[1px] last:border-b-0 border-r[0px] md:odd:border-r-[1px] md:even:border-r-0 md:[&>*:nth-child(3)]:border-b-0 md:[&>*:nth-child(4)]:border-b-0 lg:border-b-0 border-[#303030] lg:even:border-r-[1px] lg:last:border-r-[1px]'>
+                <h3>Deal 1</h3>
+                <p>
+                  ✓ Idea Stage: $5k for 5% Equity
+                  <br/>✓ Expected Revenue at This Stage: $0/mth
+                  <br/>✓ Duration of Raise: 1mth
+                  <br/>✓ Who Can Invest: People with Domain Expertise and Advisors 
+                </p>
+              </span>
+              <span className='px-2 py-4 mx-auto border-b-[1px] last:border-b-0 border-r[0px] md:odd:border-r-[1px] md:even:border-r-0 md:[&>*:nth-child(3)]:border-b-0 md:[&>*:nth-child(4)]:border-b-0 lg:border-b-0 border-[#303030] lg:even:border-r-[1px] lg:last:border-r-[1px]'>
+                <h3>Deal 2</h3>
+                <p>
+                  ✓ Idea Stage: $5k for 5% Equity
+                  <br/>✓ Expected Revenue at This Stage: $0/mth
+                  <br/>✓ Duration of Raise: 1mth
+                  <br/>✓ Who Can Invest: People with Domain Expertise and Advisors 
+                </p>
+              </span>
+              <span className='px-2 py-4 mx-auto border-b-[1px] last:border-b-0 border-r[0px] md:odd:border-r-[1px] md:even:border-r-0 md:[&>*:nth-child(3)]:border-b-0 md:[&>*:nth-child(4)]:border-b-0 lg:border-b-0 border-[#303030] lg:even:border-r-[1px] lg:last:border-r-[1px]'>
+                <h3>Deal 3</h3>
+                <p>
+                  ✓ Idea Stage: $5k for 5% Equity
+                  <br/>✓ Expected Revenue at This Stage: $0/mth
+                  <br/>✓ Duration of Raise: 1mth
+                  <br/>✓ Who Can Invest: People with Domain Expertise and Advisors 
+                </p>
+              </span>
+              <span className='px-2 py-4 mx-auto border-b-[1px] last:border-b-0 border-r[0px] md:odd:border-r-[1px] md:even:border-r-0 md:[&>*:nth-child(3)]:border-b-0 md:[&>*:nth-child(4)]:border-b-0 lg:border-b-0 border-[#303030] lg:even:border-r-[1px] lg:last:border-r-[1px]'>
+                <h3>Deal 1</h3>
+                <p>
+                  ✓ Idea Stage: $5k for 5% Equity
+                  <br/>✓ Expected Revenue at This Stage: $0/mth
+                  <br/>✓ Duration of Raise: 1mth
+                  <br/>✓ Who Can Invest: People with Domain Expertise and Advisors 
+                </p>
+              </span>
+              
             </div>
             <h1>Angel Investors & Venture Capital (Invest from $50k and above) </h1>
           </section>
