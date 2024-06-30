@@ -98,7 +98,7 @@ const Footer = () => {
         <p className='mr-auto text-white'>© 2023 SINC Partners Ltd. All rights reserved</p>
         <span className='flex mr-auto underline'>
           <p className='cursor-pointer text-white'>Privacy Policy</p>
-          <p className='cursor-pointer text-white mx-2'>Terms of Service</p>
+          <p className='cursor-pointer text-white mx-4'>Terms of Service</p>
           <p className='cursor-pointer text-white'>Security</p>
         </span>
 
