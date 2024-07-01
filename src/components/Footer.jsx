@@ -17,7 +17,7 @@ const Footer = () => {
           <Button buttonStyle={'z-10 bg-white text-black w-fit font-bold ml-auto'} buttonText={'Subscribe'}/>
         </form>
       </section>
-      <section className='w-full grid grid-flow-row lg:grid-flow-col lg:pl-[7%] border-[#ffffff46] border-t-[1px] border-b-[1px] grid-cols-1 lg:grid-cols-[3fr_1fr]'>
+      <section className='w-full grid grid-flow-row  lg:grid-flow-col lg:pl-[7%] border-[#ffffff46] border-t-[1px] border-b-[1px] grid-cols-1 lg:grid-cols-[3fr_1fr]'>
         <div className='w-full h-full flex flex-nowrap flex-col lg:flex-row pt-8 pb-6'>
           <div className='flex flex-col w-full lg:w-1/4'>
             <img src={footerLogo} alt='SINC white logo' className='w-fit'/>
@@ -73,36 +73,39 @@ const Footer = () => {
           </div>
           
         </div>
-        <div  className='w-full h-full flex flex-col border-[#ffffff46] text-[#C9C9C9] border-t-[1px] lg:border-t-0 md:border-l-[1px] pt-8 pb-6 lg:px-4'>
-          <span className='mb-6 font-bold'>Location</span>
-          <span className='mb-4 font-thin'>Abuja, Nigeria</span>
-          <span className='mb-4 font-thin'>Lagos, Nigeria</span>
-          <span className='mb-4 font-thin'>Philadelphia, USA</span>
+        <div  className='w-full h-full flex flex-col md:flex-row lg:flex-col justify-between border-[#ffffff46] text-[#C9C9C9] border-t-[1px] lg:border-t-0 md:border-l-[1px] pt-8 pb-6 lg:px-4'>
+          <div className='flex flex-col'>
+            <span className='mb-6 font-bold'>Location</span>
+            <span className='mb-4 font-thin'>Abuja, Nigeria</span>
+            <span className='mb-4 font-thin'>Lagos, Nigeria</span>
+            <span className='mb-4 font-thin'>Philadelphia, USA</span>
+          </div>
+          
           <div className='flex mt-auto items-end'>
             <span className='w-3/5'>
               <img src={accreditedLogo} alt="" className='w-fit' />
             </span>
             <span className='flex flex-col items-center cursor-pointer'>
               <img src={WhatsAppLogo} alt="" />
-              <p>Chat With Us</p>
+              <p className='text-sm'>Chat With Us</p>
             </span>
           </div>
         </div>
       </section>
-      <section className='flex flex-wrap lg:px-[7%] text-[#C9C9C9]'>
-        <p className='pt-12 pb-12 text-sm'>Guaranteed 2x on your service or cash investment, usually been the first to invest. Get in early and SINC your guaranty!</p>
-        <div className='w-[30%] ml-auto pt-8 flex justify-between'>
-         <img src={GasusLogo} className='h-[40px]'/>
-          <p className='text-xs'>We are a business built on the foundation of Christian values and belief</p>
+      <section className='flex flex-wrap justify-center lg:px-[7%] text-[#C9C9C9]'>
+        <p className='pt-6 md:pt-12 lg:pb-12 text-sm text-center lg:text-left'>Guaranteed 2x on your service or cash investment, usually been the first to invest. <span className='font-bold'>Get in early and SINC your guaranty!</span></p>
+        <div className='lg:w-[30%] lg:ml-auto pt-8 lg:pt-0 flex flex-col items-center lg:flex-row lg:justify-end'>
+         <img src={GasusLogo} className=' w-[120px] md:w-[100px] lg:h-[40px]'/>
+          <p className='text-xs text-center lg:text-left'>We are a business built on the foundation of Christian values and belief</p>
         </div>
-        <p className='mr-auto text-white'>© 2023 SINC Partners Ltd. All rights reserved</p>
-        <span className='flex mr-auto underline'>
+        <p className='lg:mr-auto w-full lg:w-fit text-white text-center lg:text-left py-4 lg:py-0'>© 2023 SINC Partners Ltd. All rights reserved</p>
+        <span className='flex justify-center w-full lg:w-fit  lg:mr-auto underline'>
           <p className='cursor-pointer text-white'>Privacy Policy</p>
           <p className='cursor-pointer text-white mx-4'>Terms of Service</p>
           <p className='cursor-pointer text-white'>Security</p>
         </span>
 
-        <span className='ml-auto'>
+        <span className='ml-auto flex justify-center w-full lg:w-fit py-4 lg-py-0'>
         <i className="fa fa-facebook-official text-white text-xl" aria-hidden="true"></i>
         <i className="fa fa-instagram text-white text-xl mx-2" aria-hidden="true"></i>
         <i className="fa fa-twitter-square text-white text-xl mx-2" aria-hidden="true"></i>
